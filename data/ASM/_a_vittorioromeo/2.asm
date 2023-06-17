@@ -1,0 +1,434 @@
+.Ltext0:
+CPP14LanguageFeatures::test0():
+.LFB1761:
+        push    rbp
+        mov     rbp, rsp
+        movss   xmm0, DWORD PTR CPP14LanguageFeatures::pi<float>[rip]
+        movss   DWORD PTR [rbp-4], xmm0
+        movsd   xmm0, QWORD PTR CPP14LanguageFeatures::pi<double>[rip]
+        movsd   QWORD PTR [rbp-16], xmm0
+        nop
+        pop     rbp
+        ret
+.LFE1761:
+CPP14LanguageFeatures::typeID<int>:
+CPP14LanguageFeatures::typeID<float>:
+CPP14LanguageFeatures::typeID<double>:
+CPP14LanguageFeatures::test1():
+.LFB1762:
+        push    rbp
+        mov     rbp, rsp
+        nop
+        pop     rbp
+        ret
+.LFE1762:
+main:
+.LFB1763:
+        push    rbp
+        mov     rbp, rsp
+        mov     eax, 0
+        pop     rbp
+        ret
+.LFE1763:
+__static_initialization_and_destruction_0(int, int):
+.LFB2287:
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+        mov     DWORD PTR [rbp-4], edi
+        mov     DWORD PTR [rbp-8], esi
+        cmp     DWORD PTR [rbp-4], 1
+        jne     .L7
+        cmp     DWORD PTR [rbp-8], 65535
+        jne     .L7
+        mov     edi, OFFSET FLAT:_ZStL8__ioinit
+        call    std::ios_base::Init::Init() [complete object constructor]
+        mov     edx, OFFSET FLAT:__dso_handle
+        mov     esi, OFFSET FLAT:_ZStL8__ioinit
+        mov     edi, OFFSET FLAT:_ZNSt8ios_base4InitD1Ev
+        call    __cxa_atexit
+.L7:
+        nop
+        leave
+        ret
+.LFE2287:
+CPP14LanguageFeatures::pi<float>:
+        .long   1078530011
+CPP14LanguageFeatures::pi<double>:
+        .long   1413754602
+        .long   1074340347
+_GLOBAL__sub_I_CPP14LanguageFeatures::test0():
+.LFB2288:
+        push    rbp
+        mov     rbp, rsp
+        mov     esi, 65535
+        mov     edi, 1
+        call    __static_initialization_and_destruction_0(int, int)
+        pop     rbp
+        ret
+.LFE2288:
+.Letext0:
+.Ldebug_info0:
+.Ldebug_abbrev0:
+.Ldebug_line0:
+.LASF272:
+.LASF119:
+.LASF221:
+.LASF149:
+.LASF56:
+.LASF247:
+.LASF66:
+.LASF290:
+.LASF151:
+.LASF63:
+.LASF75:
+.LASF339:
+.LASF270:
+.LASF278:
+.LASF42:
+.LASF356:
+.LASF322:
+.LASF8:
+.LASF318:
+.LASF284:
+.LASF135:
+.LASF31:
+.LASF198:
+.LASF305:
+.LASF335:
+.LASF159:
+.LASF112:
+.LASF241:
+.LASF78:
+.LASF329:
+.LASF29:
+.LASF12:
+.LASF165:
+.LASF47:
+.LASF58:
+.LASF351:
+.LASF226:
+.LASF223:
+.LASF217:
+.LASF184:
+.LASF87:
+.LASF93:
+.LASF197:
+.LASF118:
+.LASF39:
+.LASF54:
+.LASF35:
+.LASF131:
+.LASF333:
+.LASF354:
+.LASF109:
+.LASF192:
+.LASF189:
+.LASF57:
+.LASF166:
+.LASF325:
+.LASF124:
+.LASF17:
+.LASF121:
+.LASF228:
+.LASF229:
+.LASF244:
+.LASF77:
+.LASF295:
+.LASF23:
+.LASF133:
+.LASF219:
+.LASF256:
+.LASF98:
+.LASF289:
+.LASF213:
+.LASF206:
+.LASF200:
+.LASF242:
+.LASF101:
+.LASF174:
+.LASF276:
+.LASF132:
+.LASF34:
+.LASF336:
+.LASF70:
+.LASF4:
+.LASF40:
+.LASF186:
+.LASF307:
+.LASF298:
+.LASF116:
+.LASF55:
+.LASF201:
+.LASF326:
+.LASF209:
+.LASF227:
+.LASF99:
+.LASF171:
+.LASF190:
+.LASF127:
+.LASF71:
+.LASF150:
+.LASF252:
+.LASF183:
+.LASF255:
+.LASF22:
+.LASF33:
+.LASF44:
+.LASF153:
+.LASF120:
+.LASF215:
+.LASF59:
+.LASF287:
+.LASF288:
+.LASF115:
+.LASF111:
+.LASF245:
+.LASF343:
+.LASF84:
+.LASF13:
+.LASF281:
+.LASF208:
+.LASF203:
+.LASF211:
+.LASF341:
+.LASF104:
+.LASF212:
+.LASF26:
+.LASF193:
+.LASF271:
+.LASF239:
+.LASF3:
+.LASF301:
+.LASF96:
+.LASF249:
+.LASF238:
+.LASF311:
+.LASF18:
+.LASF94:
+.LASF231:
+.LASF158:
+.LASF234:
+.LASF19:
+.LASF338:
+.LASF50:
+.LASF258:
+.LASF107:
+.LASF304:
+.LASF297:
+.LASF279:
+.LASF27:
+.LASF331:
+.LASF187:
+.LASF277:
+.LASF15:
+.LASF204:
+.LASF76:
+.LASF259:
+.LASF103:
+.LASF319:
+.LASF294:
+.LASF327:
+.LASF316:
+.LASF64:
+.LASF146:
+.LASF144:
+.LASF324:
+.LASF344:
+.LASF169:
+.LASF317:
+.LASF32:
+.LASF236:
+.LASF170:
+.LASF86:
+.LASF172:
+.LASF83:
+.LASF68:
+.LASF182:
+.LASF106:
+.LASF348:
+.LASF91:
+.LASF216:
+.LASF312:
+.LASF321:
+.LASF273:
+.LASF92:
+.LASF72:
+.LASF65:
+.LASF48:
+.LASF280:
+.LASF313:
+.LASF222:
+.LASF2:
+.LASF314:
+.LASF49:
+.LASF110:
+.LASF306:
+.LASF309:
+.LASF41:
+.LASF180:
+.LASF308:
+.LASF20:
+.LASF296:
+.LASF196:
+.LASF6:
+.LASF224:
+.LASF205:
+.LASF123:
+.LASF360:
+.LASF342:
+.LASF95:
+.LASF46:
+.LASF359:
+.LASF353:
+.LASF194:
+.LASF90:
+.LASF117:
+.LASF136:
+.LASF218:
+.LASF81:
+.LASF25:
+.LASF328:
+.LASF102:
+.LASF164:
+.LASF176:
+.LASF88:
+.LASF347:
+.LASF143:
+.LASF232:
+.LASF275:
+.LASF79:
+.LASF240:
+.LASF100:
+.LASF300:
+.LASF154:
+.LASF310:
+.LASF352:
+.LASF246:
+.LASF74:
+.LASF257:
+.LASF266:
+.LASF105:
+.LASF162:
+.LASF349:
+.LASF254:
+.LASF299:
+.LASF358:
+.LASF16:
+.LASF207:
+.LASF250:
+.LASF302:
+.LASF261:
+.LASF141:
+.LASF179:
+.LASF263:
+.LASF262:
+.LASF10:
+.LASF9:
+.LASF181:
+.LASF126:
+.LASF237:
+.LASF163:
+.LASF60:
+.LASF315:
+.LASF214:
+.LASF350:
+.LASF80:
+.LASF267:
+.LASF293:
+.LASF155:
+.LASF188:
+.LASF225:
+.LASF191:
+.LASF157:
+.LASF43:
+.LASF283:
+.LASF7:
+.LASF85:
+.LASF291:
+.LASF14:
+.LASF11:
+.LASF202:
+.LASF210:
+.LASF145:
+.LASF161:
+.LASF129:
+.LASF21:
+.LASF147:
+.LASF148:
+.LASF138:
+.LASF177:
+.LASF156:
+.LASF253:
+.LASF260:
+.LASF173:
+.LASF185:
+.LASF323:
+.LASF82:
+.LASF357:
+.LASF28:
+.LASF230:
+.LASF61:
+.LASF355:
+.LASF334:
+.LASF220:
+.LASF303:
+.LASF285:
+.LASF282:
+.LASF97:
+.LASF274:
+.LASF195:
+.LASF265:
+.LASF167:
+.LASF152:
+.LASF233:
+.LASF168:
+.LASF45:
+.LASF134:
+.LASF89:
+.LASF69:
+.LASF37:
+.LASF292:
+.LASF108:
+.LASF320:
+.LASF130:
+.LASF340:
+.LASF175:
+.LASF235:
+.LASF346:
+.LASF53:
+.LASF128:
+.LASF264:
+.LASF268:
+.LASF125:
+.LASF269:
+.LASF243:
+.LASF67:
+.LASF332:
+.LASF73:
+.LASF24:
+.LASF142:
+.LASF286:
+.LASF248:
+.LASF5:
+.LASF122:
+.LASF140:
+.LASF137:
+.LASF36:
+.LASF160:
+.LASF178:
+.LASF337:
+.LASF62:
+.LASF52:
+.LASF330:
+.LASF114:
+.LASF38:
+.LASF251:
+.LASF139:
+.LASF199:
+.LASF345:
+.LASF51:
+.LASF30:
+.LASF113:
+.LASF0:
+.LASF1:

@@ -1,0 +1,72 @@
+.Ltext0:
+main:
+.LFB6:
+        push    rbp
+        mov     rbp, rsp
+        mov     DWORD PTR [rbp-4], edi
+        mov     QWORD PTR [rbp-16], rsi
+        mov     eax, 0
+        pop     rbp
+        ret
+.LFE6:
+.Letext0:
+.Ldebug_info0:
+.Ldebug_abbrev0:
+.Ldebug_line0:
+.LASF20:
+.LASF19:
+.LASF10:
+.LASF54:
+.LASF25:
+.LASF53:
+.LASF18:
+.LASF30:
+.LASF43:
+.LASF38:
+.LASF44:
+.LASF12:
+.LASF31:
+.LASF16:
+.LASF26:
+.LASF6:
+.LASF2:
+.LASF7:
+.LASF28:
+.LASF55:
+.LASF13:
+.LASF29:
+.LASF56:
+.LASF46:
+.LASF32:
+.LASF11:
+.LASF33:
+.LASF37:
+.LASF47:
+.LASF3:
+.LASF40:
+.LASF48:
+.LASF34:
+.LASF15:
+.LASF21:
+.LASF35:
+.LASF49:
+.LASF50:
+.LASF42:
+.LASF45:
+.LASF5:
+.LASF14:
+.LASF39:
+.LASF23:
+.LASF9:
+.LASF27:
+.LASF52:
+.LASF17:
+.LASF51:
+.LASF4:
+.LASF22:
+.LASF41:
+.LASF8:
+.LASF24:
+.LASF36:
+.LASF0:
+.LASF1:

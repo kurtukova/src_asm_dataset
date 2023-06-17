@@ -1,0 +1,291 @@
+.Ltext0:
+stack:
+        .zero   8
+.LC0:
+        .string "---> in fun"
+fun():
+.LFB0:
+        push    rbp
+        mov     rbp, rsp
+        mov     edi, OFFSET FLAT:.LC0
+        call    puts
+        nop
+        pop     rbp
+        ret
+.LFE0:
+.LC1:
+        .string "in child"
+.LC2:
+        .string ""
+.LC3:
+        .string "./pro1.out"
+.LC4:
+        .string "-------------->"
+.LC5:
+        .string "in parent"
+main:
+.LFB1:
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+        call    fork
+        cmp     DWORD PTR [rbp-4], eax
+        setne   al
+        test    al, al
+        je      .L3
+        mov     edi, OFFSET FLAT:.LC1
+        call    puts
+        mov     edx, 0
+        mov     esi, OFFSET FLAT:.LC2
+        mov     edi, OFFSET FLAT:.LC3
+        mov     eax, 0
+        call    execl
+        mov     edi, OFFSET FLAT:.LC4
+        call    puts
+        jmp     .L4
+.L3:
+        mov     edi, OFFSET FLAT:.LC5
+        call    puts
+.L4:
+        mov     eax, 0
+        leave
+        ret
+.LFE1:
+.Letext0:
+.Ldebug_info0:
+.Ldebug_abbrev0:
+.Ldebug_line0:
+.LASF84:
+.LASF86:
+.LASF101:
+.LASF148:
+.LASF58:
+.LASF153:
+.LASF186:
+.LASF211:
+.LASF129:
+.LASF18:
+.LASF90:
+.LASF132:
+.LASF131:
+.LASF144:
+.LASF71:
+.LASF77:
+.LASF82:
+.LASF40:
+.LASF79:
+.LASF197:
+.LASF221:
+.LASF107:
+.LASF28:
+.LASF226:
+.LASF138:
+.LASF75:
+.LASF23:
+.LASF50:
+.LASF104:
+.LASF93:
+.LASF175:
+.LASF61:
+.LASF45:
+.LASF17:
+.LASF150:
+.LASF183:
+.LASF225:
+.LASF6:
+.LASF145:
+.LASF113:
+.LASF51:
+.LASF69:
+.LASF47:
+.LASF30:
+.LASF68:
+.LASF67:
+.LASF112:
+.LASF11:
+.LASF210:
+.LASF8:
+.LASF46:
+.LASF202:
+.LASF193:
+.LASF169:
+.LASF15:
+.LASF220:
+.LASF89:
+.LASF38:
+.LASF117:
+.LASF168:
+.LASF88:
+.LASF99:
+.LASF57:
+.LASF223:
+.LASF118:
+.LASF224:
+.LASF188:
+.LASF139:
+.LASF39:
+.LASF187:
+.LASF34:
+.LASF192:
+.LASF27:
+.LASF85:
+.LASF60:
+.LASF48:
+.LASF3:
+.LASF233:
+.LASF87:
+.LASF212:
+.LASF162:
+.LASF166:
+.LASF100:
+.LASF160:
+.LASF44:
+.LASF2:
+.LASF109:
+.LASF110:
+.LASF111:
+.LASF12:
+.LASF142:
+.LASF102:
+.LASF231:
+.LASF35:
+.LASF222:
+.LASF121:
+.LASF65:
+.LASF22:
+.LASF194:
+.LASF126:
+.LASF63:
+.LASF136:
+.LASF49:
+.LASF7:
+.LASF26:
+.LASF149:
+.LASF130:
+.LASF209:
+.LASF181:
+.LASF137:
+.LASF78:
+.LASF54:
+.LASF191:
+.LASF32:
+.LASF143:
+.LASF205:
+.LASF128:
+.LASF25:
+.LASF195:
+.LASF185:
+.LASF217:
+.LASF14:
+.LASF114:
+.LASF124:
+.LASF53:
+.LASF170:
+.LASF95:
+.LASF20:
+.LASF200:
+.LASF98:
+.LASF177:
+.LASF155:
+.LASF141:
+.LASF157:
+.LASF165:
+.LASF151:
+.LASF108:
+.LASF73:
+.LASF189:
+.LASF24:
+.LASF174:
+.LASF158:
+.LASF159:
+.LASF146:
+.LASF36:
+.LASF52:
+.LASF163:
+.LASF33:
+.LASF43:
+.LASF19:
+.LASF201:
+.LASF190:
+.LASF180:
+.LASF164:
+.LASF21:
+.LASF154:
+.LASF228:
+.LASF203:
+.LASF62:
+.LASF176:
+.LASF219:
+.LASF179:
+.LASF115:
+.LASF72:
+.LASF230:
+.LASF196:
+.LASF119:
+.LASF134:
+.LASF116:
+.LASF207:
+.LASF198:
+.LASF74:
+.LASF214:
+.LASF182:
+.LASF161:
+.LASF59:
+.LASF105:
+.LASF9:
+.LASF140:
+.LASF156:
+.LASF41:
+.LASF171:
+.LASF96:
+.LASF125:
+.LASF29:
+.LASF37:
+.LASF56:
+.LASF81:
+.LASF216:
+.LASF16:
+.LASF135:
+.LASF5:
+.LASF4:
+.LASF122:
+.LASF13:
+.LASF172:
+.LASF70:
+.LASF76:
+.LASF80:
+.LASF208:
+.LASF147:
+.LASF199:
+.LASF123:
+.LASF173:
+.LASF127:
+.LASF10:
+.LASF55:
+.LASF218:
+.LASF184:
+.LASF31:
+.LASF213:
+.LASF206:
+.LASF120:
+.LASF133:
+.LASF42:
+.LASF94:
+.LASF152:
+.LASF227:
+.LASF64:
+.LASF204:
+.LASF97:
+.LASF167:
+.LASF66:
+.LASF229:
+.LASF215:
+.LASF232:
+.LASF103:
+.LASF178:
+.LASF91:
+.LASF92:
+.LASF106:
+.LASF83:
+.LASF0:
+.LASF1:

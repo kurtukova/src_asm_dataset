@@ -1,0 +1,972 @@
+.Ltext0:
+main::{unnamed type#1}::main() [base object constructor]:
+.LFB1764:
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+        mov     QWORD PTR [rbp-8], rdi
+.LBB5:
+        mov     rax, QWORD PTR [rbp-8]
+        add     rax, 8
+        mov     rdi, rax
+        call    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string() [complete object constructor]
+.LBE5:
+        nop
+        leave
+        ret
+.LFE1764:
+main::{unnamed type#1}::~main() [base object destructor]:
+.LFB1767:
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+        mov     QWORD PTR [rbp-8], rdi
+.LBB6:
+        mov     rax, QWORD PTR [rbp-8]
+        add     rax, 8
+        mov     rdi, rax
+        call    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [complete object destructor]
+.LBE6:
+        nop
+        leave
+        ret
+.LFE1767:
+.LC0:
+        .string "Hello World!"
+.LC1:
+        .string "\n"
+main:
+.LFB1761:
+        push    rbp
+        mov     rbp, rsp
+        push    rbx
+        sub     rsp, 56
+        lea     rax, [rbp-64]
+        mov     rdi, rax
+        call    main::{unnamed type#1}::main() [complete object constructor]
+        mov     DWORD PTR [rbp-64], 1
+        lea     rax, [rbp-64]
+        add     rax, 8
+        mov     esi, OFFSET FLAT:.LC0
+        mov     rdi, rax
+.LEHB0:
+        call    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(char const*)
+        mov     eax, DWORD PTR [rbp-64]
+        mov     esi, eax
+        mov     edi, OFFSET FLAT:_ZSt4cout
+        call    std::basic_ostream<char, std::char_traits<char> >::operator<<(int)
+        mov     esi, OFFSET FLAT:.LC1
+        mov     rdi, rax
+        call    std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
+        lea     rax, [rbp-64]
+        add     rax, 8
+        mov     rsi, rax
+        mov     edi, OFFSET FLAT:_ZSt4cout
+        call    std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+        mov     esi, OFFSET FLAT:.LC1
+        mov     rdi, rax
+        call    std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
+.LEHE0:
+        mov     ebx, 0
+        lea     rax, [rbp-64]
+        mov     rdi, rax
+        call    main::{unnamed type#1}::~main() [complete object destructor]
+        mov     eax, ebx
+        jmp     .L7
+.L6:
+        mov     rbx, rax
+        lea     rax, [rbp-64]
+        mov     rdi, rax
+        call    main::{unnamed type#1}::~main() [complete object destructor]
+        mov     rax, rbx
+        mov     rdi, rax
+.LEHB1:
+        call    _Unwind_Resume
+.LEHE1:
+.L7:
+        mov     rbx, QWORD PTR [rbp-8]
+        leave
+        ret
+.LFE1761:
+.LLSDA1761:
+.LLSDACSB1761:
+.LLSDACSE1761:
+__static_initialization_and_destruction_0(int, int):
+.LFB2301:
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+        mov     DWORD PTR [rbp-4], edi
+        mov     DWORD PTR [rbp-8], esi
+        cmp     DWORD PTR [rbp-4], 1
+        jne     .L10
+        cmp     DWORD PTR [rbp-8], 65535
+        jne     .L10
+        mov     edi, OFFSET FLAT:_ZStL8__ioinit
+        call    std::ios_base::Init::Init() [complete object constructor]
+        mov     edx, OFFSET FLAT:__dso_handle
+        mov     esi, OFFSET FLAT:_ZStL8__ioinit
+        mov     edi, OFFSET FLAT:_ZNSt8ios_base4InitD1Ev
+        call    __cxa_atexit
+.L10:
+        nop
+        leave
+        ret
+.LFE2301:
+_GLOBAL__sub_I_main:
+.LFB2302:
+        push    rbp
+        mov     rbp, rsp
+        mov     esi, 65535
+        mov     edi, 1
+        call    __static_initialization_and_destruction_0(int, int)
+        pop     rbp
+        ret
+.LFE2302:
+.Letext0:
+.Ldebug_info0:
+.Ldebug_abbrev0:
+.Ldebug_line0:
+.LASF841:
+.LASF37:
+.LASF776:
+.LASF670:
+.LASF607:
+.LASF273:
+.LASF13:
+.LASF778:
+.LASF542:
+.LASF18:
+.LASF232:
+.LASF251:
+.LASF590:
+.LASF242:
+.LASF331:
+.LASF389:
+.LASF768:
+.LASF633:
+.LASF330:
+.LASF593:
+.LASF693:
+.LASF347:
+.LASF659:
+.LASF194:
+.LASF367:
+.LASF398:
+.LASF269:
+.LASF34:
+.LASF686:
+.LASF828:
+.LASF582:
+.LASF384:
+.LASF757:
+.LASF671:
+.LASF391:
+.LASF538:
+.LASF490:
+.LASF725:
+.LASF58:
+.LASF63:
+.LASF656:
+.LASF762:
+.LASF227:
+.LASF759:
+.LASF485:
+.LASF27:
+.LASF794:
+.LASF730:
+.LASF226:
+.LASF144:
+.LASF294:
+.LASF43:
+.LASF737:
+.LASF824:
+.LASF702:
+.LASF302:
+.LASF285:
+.LASF155:
+.LASF288:
+.LASF815:
+.LASF42:
+.LASF493:
+.LASF713:
+.LASF735:
+.LASF32:
+.LASF329:
+.LASF474:
+.LASF629:
+.LASF496:
+.LASF349:
+.LASF206:
+.LASF175:
+.LASF563:
+.LASF758:
+.LASF709:
+.LASF64:
+.LASF622:
+.LASF138:
+.LASF777:
+.LASF764:
+.LASF36:
+.LASF536:
+.LASF771:
+.LASF298:
+.LASF40:
+.LASF692:
+.LASF114:
+.LASF707:
+.LASF418:
+.LASF605:
+.LASF15:
+.LASF178:
+.LASF94:
+.LASF651:
+.LASF688:
+.LASF365:
+.LASF85:
+.LASF604:
+.LASF421:
+.LASF276:
+.LASF315:
+.LASF295:
+.LASF738:
+.LASF415:
+.LASF739:
+.LASF255:
+.LASF223:
+.LASF740:
+.LASF478:
+.LASF394:
+.LASF257:
+.LASF246:
+.LASF264:
+.LASF103:
+.LASF704:
+.LASF561:
+.LASF71:
+.LASF548:
+.LASF142:
+.LASF530:
+.LASF316:
+.LASF756:
+.LASF818:
+.LASF101:
+.LASF470:
+.LASF767:
+.LASF324:
+.LASF770:
+.LASF356:
+.LASF821:
+.LASF719:
+.LASF483:
+.LASF443:
+.LASF799:
+.LASF222:
+.LASF272:
+.LASF225:
+.LASF95:
+.LASF748:
+.LASF486:
+.LASF134:
+.LASF632:
+.LASF426:
+.LASF803:
+.LASF86:
+.LASF216:
+.LASF293:
+.LASF826:
+.LASF716:
+.LASF186:
+.LASF424:
+.LASF81:
+.LASF177:
+.LASF148:
+.LASF392:
+.LASF152:
+.LASF368:
+.LASF248:
+.LASF233:
+.LASF191:
+.LASF837:
+.LASF450:
+.LASF446:
+.LASF547:
+.LASF760:
+.LASF674:
+.LASF599:
+.LASF611:
+.LASF615:
+.LASF812:
+.LASF411:
+.LASF600:
+.LASF788:
+.LASF769:
+.LASF488:
+.LASF796:
+.LASF70:
+.LASF522:
+.LASF504:
+.LASF189:
+.LASF724:
+.LASF447:
+.LASF809:
+.LASF465:
+.LASF353:
+.LASF661:
+.LASF84:
+.LASF643:
+.LASF181:
+.LASF193:
+.LASF644:
+.LASF352:
+.LASF808:
+.LASF714:
+.LASF258:
+.LASF309:
+.LASF772:
+.LASF576:
+.LASF184:
+.LASF648:
+.LASF833:
+.LASF546:
+.LASF464:
+.LASF336:
+.LASF250:
+.LASF680:
+.LASF512:
+.LASF462:
+.LASF733:
+.LASF535:
+.LASF750:
+.LASF106:
+.LASF520:
+.LASF310:
+.LASF419:
+.LASF397:
+.LASF573:
+.LASF79:
+.LASF372:
+.LASF431:
+.LASF572:
+.LASF290:
+.LASF374:
+.LASF112:
+.LASF185:
+.LASF456:
+.LASF19:
+.LASF587:
+.LASF339:
+.LASF743:
+.LASF328:
+.LASF785:
+.LASF836:
+.LASF21:
+.LASF381:
+.LASF430:
+.LASF801:
+.LASF819:
+.LASF684:
+.LASF634:
+.LASF147:
+.LASF355:
+.LASF350:
+.LASF839:
+.LASF653:
+.LASF442:
+.LASF413:
+.LASF234:
+.LASF484:
+.LASF567:
+.LASF399:
+.LASF203:
+.LASF182:
+.LASF351:
+.LASF358:
+.LASF594:
+.LASF816:
+.LASF728:
+.LASF359:
+.LASF122:
+.LASF109:
+.LASF408:
+.LASF541:
+.LASF57:
+.LASF24:
+.LASF570:
+.LASF312:
+.LASF705:
+.LASF523:
+.LASF9:
+.LASF784:
+.LASF108:
+.LASF125:
+.LASF388:
+.LASF412:
+.LASF514:
+.LASF708:
+.LASF266:
+.LASF409:
+.LASF230:
+.LASF717:
+.LASF305:
+.LASF117:
+.LASF210:
+.LASF338:
+.LASF376:
+.LASF434:
+.LASF190:
+.LASF834:
+.LASF35:
+.LASF231:
+.LASF640:
+.LASF87:
+.LASF201:
+.LASF196:
+.LASF763:
+.LASF665:
+.LASF130:
+.LASF451:
+.LASF195:
+.LASF537:
+.LASF549:
+.LASF131:
+.LASF281:
+.LASF479:
+.LASF527:
+.LASF303:
+.LASF753:
+.LASF279:
+.LASF568:
+.LASF253:
+.LASF76:
+.LASF165:
+.LASF532:
+.LASF482:
+.LASF509:
+.LASF239:
+.LASF510:
+.LASF574:
+.LASF346:
+.LASF668:
+.LASF457:
+.LASF650:
+.LASF685:
+.LASF360:
+.LASF10:
+.LASF77:
+.LASF44:
+.LASF249:
+.LASF217:
+.LASF304:
+.LASF554:
+.LASF792:
+.LASF176:
+.LASF466:
+.LASF212:
+.LASF519:
+.LASF453:
+.LASF296:
+.LASF583:
+.LASF72:
+.LASF489:
+.LASF624:
+.LASF565:
+.LASF96:
+.LASF121:
+.LASF91:
+.LASF224:
+.LASF373:
+.LASF657:
+.LASF393:
+.LASF742:
+.LASF806:
+.LASF683:
+.LASF93:
+.LASF126:
+.LASF7:
+.LASF327:
+.LASF66:
+.LASF463:
+.LASF335:
+.LASF161:
+.LASF118:
+.LASF289:
+.LASF59:
+.LASF364:
+.LASF157:
+.LASF38:
+.LASF247:
+.LASF115:
+.LASF400:
+.LASF588:
+.LASF726:
+.LASF663:
+.LASF706:
+.LASF731:
+.LASF26:
+.LASF172:
+.LASF681:
+.LASF524:
+.LASF383:
+.LASF274:
+.LASF804:
+.LASF649:
+.LASF51:
+.LASF452:
+.LASF575:
+.LASF755:
+.LASF127:
+.LASF500:
+.LASF214:
+.LASF150:
+.LASF454:
+.LASF695:
+.LASF495:
+.LASF342:
+.LASF104:
+.LASF65:
+.LASF243:
+.LASF3:
+.LASF370:
+.LASF734:
+.LASF198:
+.LASF553:
+.LASF477:
+.LASF497:
+.LASF387:
+.LASF137:
+.LASF783:
+.LASF240:
+.LASF311:
+.LASF282:
+.LASF720:
+.LASF468:
+.LASF123:
+.LASF602:
+.LASF361:
+.LASF220:
+.LASF805:
+.LASF598:
+.LASF110:
+.LASF807:
+.LASF154:
+.LASF655:
+.LASF639:
+.LASF498:
+.LASF20:
+.LASF566:
+.LASF544:
+.LASF183:
+.LASF143:
+.LASF557:
+.LASF238:
+.LASF832:
+.LASF558:
+.LASF267:
+.LASF180:
+.LASF467:
+.LASF559:
+.LASF560:
+.LASF416:
+.LASF5:
+.LASF92:
+.LASF746:
+.LASF29:
+.LASF333:
+.LASF458:
+.LASF429:
+.LASF375:
+.LASF697:
+.LASF564:
+.LASF494:
+.LASF8:
+.LASF630:
+.LASF188:
+.LASF596:
+.LASF265:
+.LASF672:
+.LASF4:
+.LASF284:
+.LASF838:
+.LASF62:
+.LASF715:
+.LASF229:
+.LASF835:
+.LASF666:
+.LASF30:
+.LASF480:
+.LASF616:
+.LASF459:
+.LASF609:
+.LASF308:
+.LASF625:
+.LASF83:
+.LASF787:
+.LASF156:
+.LASF319:
+.LASF694:
+.LASF192:
+.LASF556:
+.LASF200:
+.LASF136:
+.LASF105:
+.LASF292:
+.LASF395:
+.LASF12:
+.LASF39:
+.LASF618:
+.LASF162:
+.LASF49:
+.LASF390:
+.LASF620:
+.LASF433:
+.LASF98:
+.LASF515:
+.LASF691:
+.LASF100:
+.LASF439:
+.LASF455:
+.LASF473:
+.LASF174:
+.LASF754:
+.LASF687:
+.LASF207:
+.LASF297:
+.LASF432:
+.LASF825:
+.LASF789:
+.LASF158:
+.LASF407:
+.LASF448:
+.LASF23:
+.LASF111:
+.LASF481:
+.LASF241:
+.LASF128:
+.LASF320:
+.LASF50:
+.LASF73:
+.LASF621:
+.LASF491:
+.LASF699:
+.LASF187:
+.LASF145:
+.LASF786:
+.LASF45:
+.LASF171:
+.LASF268:
+.LASF827:
+.LASF17:
+.LASF377:
+.LASF577:
+.LASF208:
+.LASF642:
+.LASF682:
+.LASF773:
+.LASF678:
+.LASF2:
+.LASF437:
+.LASF503:
+.LASF749:
+.LASF366:
+.LASF502:
+.LASF696:
+.LASF6:
+.LASF626:
+.LASF518:
+.LASF401:
+.LASF357:
+.LASF197:
+.LASF218:
+.LASF628:
+.LASF52:
+.LASF475:
+.LASF449:
+.LASF440:
+.LASF151:
+.LASF385:
+.LASF627:
+.LASF732:
+.LASF199:
+.LASF543:
+.LASF205:
+.LASF16:
+.LASF396:
+.LASF129:
+.LASF124:
+.LASF741:
+.LASF612:
+.LASF167:
+.LASF386:
+.LASF823:
+.LASF140:
+.LASF307:
+.LASF802:
+.LASF403:
+.LASF842:
+.LASF166:
+.LASF82:
+.LASF89:
+.LASF641:
+.LASF75:
+.LASF11:
+.LASF637:
+.LASF718:
+.LASF88:
+.LASF675:
+.LASF638:
+.LASF314:
+.LASF436:
+.LASF299:
+.LASF428:
+.LASF202:
+.LASF68:
+.LASF80:
+.LASF791:
+.LASF540:
+.LASF322:
+.LASF811:
+.LASF555:
+.LASF660:
+.LASF712:
+.LASF584:
+.LASF260:
+.LASF280:
+.LASF619:
+.LASF326:
+.LASF48:
+.LASF581:
+.LASF423:
+.LASF135:
+.LASF256:
+.LASF334:
+.LASF237:
+.LASF317:
+.LASF603:
+.LASF313:
+.LASF516:
+.LASF521:
+.LASF362:
+.LASF445:
+.LASF797:
+.LASF343:
+.LASF213:
+.LASF831:
+.LASF679:
+.LASF354:
+.LASF729:
+.LASF22:
+.LASF614:
+.LASF822:
+.LASF153:
+.LASF460:
+.LASF382:
+.LASF652:
+.LASF420:
+.LASF33:
+.LASF723:
+.LASF221:
+.LASF580:
+.LASF209:
+.LASF529:
+.LASF511:
+.LASF14:
+.LASF139:
+.LASF647:
+.LASF487:
+.LASF669:
+.LASF414:
+.LASF595:
+.LASF363:
+.LASF820:
+.LASF471:
+.LASF779:
+.LASF291:
+.LASF133:
+.LASF800:
+.LASF700:
+.LASF526:
+.LASF337:
+.LASF54:
+.LASF744:
+.LASF579:
+.LASF300:
+.LASF499:
+.LASF790:
+.LASF301:
+.LASF270:
+.LASF31:
+.LASF47:
+.LASF173:
+.LASF168:
+.LASF211:
+.LASF348:
+.LASF318:
+.LASF551:
+.LASF404:
+.LASF444:
+.LASF275:
+.LASF817:
+.LASF132:
+.LASF751:
+.LASF102:
+.LASF761:
+.LASF690:
+.LASF469:
+.LASF99:
+.LASF752:
+.LASF141:
+.LASF710:
+.LASF425:
+.LASF774:
+.LASF703:
+.LASF646:
+.LASF245:
+.LASF259:
+.LASF501:
+.LASF90:
+.LASF677:
+.LASF539:
+.LASF149:
+.LASF591:
+.LASF765:
+.LASF164:
+.LASF782:
+.LASF586:
+.LASF736:
+.LASF405:
+.LASF306:
+.LASF341:
+.LASF623:
+.LASF219:
+.LASF664:
+.LASF371:
+.LASF41:
+.LASF369:
+.LASF589:
+.LASF410:
+.LASF667:
+.LASF636:
+.LASF236:
+.LASF252:
+.LASF533:
+.LASF406:
+.LASF287:
+.LASF534:
+.LASF592:
+.LASF793:
+.LASF727:
+.LASF286:
+.LASF610:
+.LASF721:
+.LASF645:
+.LASF55:
+.LASF550:
+.LASF492:
+.LASF795:
+.LASF262:
+.LASF378:
+.LASF814:
+.LASF402:
+.LASF531:
+.LASF254:
+.LASF698:
+.LASF345:
+.LASF321:
+.LASF25:
+.LASF745:
+.LASF441:
+.LASF552:
+.LASF813:
+.LASF67:
+.LASF606:
+.LASF840:
+.LASF325:
+.LASF585:
+.LASF676:
+.LASF722:
+.LASF613:
+.LASF601:
+.LASF766:
+.LASF204:
+.LASF113:
+.LASF635:
+.LASF278:
+.LASF571:
+.LASF283:
+.LASF508:
+.LASF631:
+.LASF528:
+.LASF146:
+.LASF517:
+.LASF46:
+.LASF61:
+.LASF215:
+.LASF505:
+.LASF662:
+.LASF344:
+.LASF74:
+.LASF435:
+.LASF159:
+.LASF169:
+.LASF417:
+.LASF340:
+.LASF507:
+.LASF711:
+.LASF545:
+.LASF69:
+.LASF427:
+.LASF53:
+.LASF422:
+.LASF658:
+.LASF617:
+.LASF119:
+.LASF780:
+.LASF263:
+.LASF689:
+.LASF578:
+.LASF244:
+.LASF525:
+.LASF28:
+.LASF120:
+.LASF461:
+.LASF597:
+.LASF830:
+.LASF56:
+.LASF654:
+.LASF673:
+.LASF810:
+.LASF78:
+.LASF60:
+.LASF513:
+.LASF323:
+.LASF170:
+.LASF228:
+.LASF798:
+.LASF97:
+.LASF701:
+.LASF116:
+.LASF261:
+.LASF163:
+.LASF277:
+.LASF332:
+.LASF569:
+.LASF179:
+.LASF107:
+.LASF775:
+.LASF160:
+.LASF271:
+.LASF472:
+.LASF747:
+.LASF506:
+.LASF829:
+.LASF235:
+.LASF438:
+.LASF562:
+.LASF476:
+.LASF781:
+.LASF379:
+.LASF380:
+.LASF608:
+.LASF0:
+.LASF1:

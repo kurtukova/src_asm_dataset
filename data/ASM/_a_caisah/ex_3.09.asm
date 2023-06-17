@@ -1,0 +1,9 @@
+.Ltext0:
+.Letext0:
+.Ldebug_info0:
+.Ldebug_abbrev0:
+.Ldebug_line0:
+.LASF3:
+.LASF2:
+.LASF0:
+.LASF1:
