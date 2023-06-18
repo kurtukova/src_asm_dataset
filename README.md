@@ -1,3 +1,3 @@
-# Демо-версия датасета для проведения экспериментов по определению авторства дизассемблированных бинарных кодов
+# The demo version of the dataset for authorship identification of disassembled binary code experiments
 
-Для компиляции исходников использовались соответствующие опции и компилятор, указанные в README, для дизассемблирования - IDA Pro. Исходные коды программ представлены в папке data/scr. Дизассемблированные коды программ - в папке data/asm. 
+The source codes were compiled using the specified options and compiler mentioned in the README file. For disassembly, IDA Pro was used. The source code files are available in the data/src folder, while the disassembled code files can be found in the data/asm folder.
